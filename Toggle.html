@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        .show{
+            margin: 10px 0px;
+        }
+        button{
+            background-color: white;
+            border: black solid 1px;
+            margin: 0px 3px;
+            width: 40px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .bg{
+            background-color: #006400;
+            color: #FFFFFF;
+        }
+    </style>
+    <script>
+        function fun(n){
+            const btn=document.getElementById(n);
+                btn.classList.toggle("bg");
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div class="show">
+            <button id="1" onclick="fun(1)">1</button>
+            <button id="2" onclick="fun(2)">2</button>
+            <button id="3" onclick="fun(3)">3</button>
+        </div>
+        <div class="show">
+            <button id="4" onclick="fun(4)">4</button>
+            <button id="5" onclick="fun(5)">5</button>
+            <button id="6" onclick="fun(6)">6</button>
+        </div>
+        <div class="show">
+            <button id="7" onclick="fun(7)">7</button>
+            <button id="8" onclick="fun(8)">8</button>
+            <button id="9" onclick="fun(9)">9</button>
+        </div>
+    </div>
+</body>
+</html>
